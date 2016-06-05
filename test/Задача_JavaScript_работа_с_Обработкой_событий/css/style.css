@@ -1,0 +1,116 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #5b5652;
+}
+
+h1 {
+	margin: 20px 0;
+	color: #fff;
+	font: normal 36px PT Sans;
+	text-align: center;
+	text-shadow: 0 1px 0 #000;
+}
+
+fieldset {
+	margin: 20px;
+	padding: 10px;
+	width: 40%;
+	float: left;
+}
+
+legend {
+	color: #fff;
+	font: normal 18px PT Sans;
+	text-shadow: 0 1px 0 #000;
+}
+
+.task-list li {
+	list-style: none;
+	margin: 20px;
+	display: inline-block;
+	float: left;
+}
+
+/* Свойства для изображения */
+img {
+	cursor: pointer;
+}
+
+/* Текст который прячется при наведении на кнопку */
+#mouseOverButton {
+	color: red;
+	float: right;
+	margin-left: 20px;
+	cursor: default;
+	font: normal 18px PT Sans;
+	text-shadow: 0 1px 0 #000;
+}
+
+.error { border-color: red; }
+.choose { border-color: green; }
+.textShow { border-color: blue; }
+
+/* Для onClick*/
+/* Кнопка */
+.button {	
+	border: none;
+	padding: 10px 15px;
+	font: normal 24px PT Sans;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	text-shadow: 0 1px 0 #000;
+	clear: both;
+}
+/* Индивидуальные свойства для кнопок */
+.zero {
+	background: #e55d45;
+}
+
+.one {
+	background: #e55d45;
+	margin-bottom: 20px;
+}
+
+.two {
+	background: #8c8c80;
+	border-bottom: 3px solid #7d7d71;
+}
+
+.three {
+	background-color: #37a2d6;
+	border-bottom: 3px solid #188fc7;
+}
+
+#numberId {
+	font: normal 18px PT Sans;
+	color: #fff;
+}
+
+#click {
+	color: #fff;
+	text-decoration: none;
+}
+
+input[type="text"] {
+	outline: none;
+	width: 100%;
+	height: 30px;
+	float: left;
+	padding-left: 10px;
+	margin-top: 20px;
+	margin: 20px auto;
+} 
+
+label {
+	color: #fff;
+}
+
+#error {
+	color: #fff;
+	font: normal 16px PT Sans;
+}

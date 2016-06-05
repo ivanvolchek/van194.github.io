@@ -1,0 +1,476 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* font-family: "SegoeUILight"; */
+@font-face {
+    font-family: "SegoeWP-Light";
+    src: url("fonts/SegoeWP-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "SegoeWP"; */
+@font-face {
+    font-family: "SegoeWP";
+    src: url("fonts/SegoeWP.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+	font-size: 100%;
+}
+
+#wrapper {
+	width: 1250px;
+	margin: 0 auto;
+	display: block;
+	background: #2C3E50;
+}
+
+.header-bg {
+	width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.header-bg a {
+	text-decoration: none;
+}
+
+.page-header {
+	margin: 0 auto;
+	width: 100%;
+	background: #ffffff;
+	max-width: 1250px;
+	position: relative;
+ 	z-index: 2; 
+}
+
+/* Логотип */
+.logo {
+    display: block; 
+    float: left; 
+    margin-top: 23px;
+    margin-left: 27px;
+} 
+
+.logo img {
+	float: left;
+}
+
+
+.logo figcaption {
+	color: #000000; /* Цвет текста */
+	font-family: Segoe WP, Arial, sans-serif;
+	font-weight: lighter;
+	float: left;
+	font-size: 42.35px;
+	line-height: 42.35px;
+	margin-left: 13px;
+}
+
+/* Меню в шапке страницы */
+.nav {
+	float: right;
+	font-size: 0;
+	width: 443px;
+	margin-right: 4px;
+	margin-top: 40px;
+	padding-bottom: 4px;
+}
+
+.nav li {
+	display: inline-block;
+  	width: 25%; /* 4 пункта меню, то есть 100%/4 */
+  	text-align: center;
+}
+
+.nav  a {
+	text-decoration: none;
+	color: #6c6c6c;
+	font-family: Segoe WP, Arial, sans-serif;
+	font-weight: lighter;
+	font-size: 21px;
+	display: block;
+  	padding: 3px 2px;
+  	padding-bottom: 12px;
+  	text-decoration: none;
+}
+
+/* Для отладки немножко */
+.nav a {
+  position: relative;
+  transition: border-color 500ms ease 0s;
+} 
+
+/* Псевдо класс для линии внизу */
+.nav a:after {
+  background: #5094f2;
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 25%;
+  opacity: 0;
+  position: absolute;
+  transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  width: 50%;
+}
+
+/* Разъесжается в лево и в право */
+.nav a:hover:after {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+
+/* Начало слайдер */
+.jms-slideshow {
+	position: relative;
+	z-index: 1; 
+	width: 100%;
+	max-width: 1250px;
+	min-width: 640px;
+	margin: -89px auto 0;
+	height: 460px;
+	height: 579px;
+}
+
+.jms-wrapper {
+	width: auto;
+	min-width: 600px;
+	height: 579px;
+	background-color: #fff;
+	-webkit-background-clip: padding;
+	-moz-background-clip: padding;     
+	background-clip: padding-box;
+	-webkit-transition: background-color 1s linear;
+	-moz-transition: background-color 1s linear;
+	-o-transition: background-color 1s linear;
+	-ms-transition: background-color 1s linear;
+	transition: background-color 1s linear;
+}
+
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.color-5 {
+	background: url(../images/slider-background.png) no-repeat;
+	background-position: top center;
+}
+
+.step {	
+	width: 900px;
+    height: 420px;
+	display: block;
+	-webkit-transition: opacity 1s;
+	-moz-transition:    opacity 1s;
+	-ms-transition:     opacity 1s;
+	-o-transition:      opacity 1s;
+	transition:         opacity 1s;
+}
+
+.step:not(.active) {
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+}
+
+.jms-content{
+	margin: 88px 24px 0px 449px;
+	position: relative;
+	clear: both;
+}
+
+.step h3{
+	color: #fff;
+	font-size: 42.35px;
+	font-family: Segoe WP, Arial, sans-serif;
+	font-weight: inherit;
+	margin: 0;
+	padding: 60px 0 5px;
+}
+
+.step p {
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	font-size: 26.35px;
+	font-family: Segoe WP, Arial, sans-serif;
+	font-weight: lighter;
+	position: relative;
+	margin: 0;
+}
+
+a.jms-link{
+	color: #fff;
+	-text-transform: capitalize;
+	text-decoration: none;
+	background: #5094f2; /* Old browsers */
+	display: inline-block;
+	font-size: 22.35px;
+	font-family: Segoe WP, Arial, sans-serif;
+	font-weight: lighter;
+	color: #fff;
+	border-radius: 1px;
+	opacity: 1;
+	margin-top: 40px;
+	clear: both;
+	position: relative;
+	width: 144px;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	padding-left: 28px;
+	margin-left: 14px;
+}
+
+a.jms-link:before {
+	content: "";
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	top: 11px;
+	left: 10px;
+	background: url(images/icon-yes.png) no-repeat;
+
+}
+
+
+.step:not(.active) a.jms-link{
+	opacity: 0;
+	margin-top: 80px;
+}
+.step img{
+	position: absolute;
+	left: 0px;
+	top: 40px;
+}
+
+.jms-arrows{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.jms-arrows span{
+	position: absolute;
+	top: 50%;
+	margin-top: 22px;
+	-margin-left: 90px;
+	height: 80px;
+	width: 30px;
+	cursor: pointer;
+	z-index: 2000;
+}
+
+.jms-arrows span.jms-arrows-prev{
+	background: url(images/arrow_left.png) no-repeat 50% 50%;
+	left: 90px;
+}
+
+.jms-arrows span.jms-arrows-next{
+	background: url(images/arrow_right.png) no-repeat 50% 50%;
+	right: 90px;
+}
+
+/* Not supported style */
+.jms-wrapper.not-supported{
+	background-color: #E3D8FF;
+	background-color: rgba(227, 216, 268, 1);
+}
+
+.jms-wrapper.not-supported:after{
+	content: 'The slideshow functionality is not supported on your device.';
+	padding: 0px 0px 30px 0px;
+	text-align: center;
+	display: block;
+}
+
+.jms-wrapper.not-supported .step{
+	display: none;
+	position: relative;
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+	margin: 20px auto;
+}
+
+.jms-wrapper.not-supported .step:first-of-type{
+	display: block;
+}
+
+.jms-wrapper.not-supported .step:not(.active) a.jms-link{
+	opacity: 1;
+	margin-top: 40px;
+}
+
+.clearfix {
+	 content: "";
+    display: table;
+    line-height: 0;
+}
+
+/* Контент */ 
+.content {
+	width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+	margin-top: 56px;
+	padding-bottom: 49px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.blocks {
+	font: 14px Vardana, Geneva, sans-serif;
+	text-align: justify;
+
+	/* Обнуляем для родетеся */
+	line-height: 0;
+	font-size: 1px; /* 1px для Opera */
+
+	/* Лекарство для IE6-7 */
+	text-justify: newspaper;
+	zoom: 1;
+
+	/* Включаем в роботу последнию стороку */
+
+	text-align-last: justify;
+
+}
+
+.blocks:after {
+	width: 100%;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+	content: "";
+	display: inline-block;
+}
+
+.blocks li {
+	width: 325px;
+	height: auto;
+	display: inline-block;
+	text-align: center;
+
+	/* Востанавливаем у потомков, кроме последнего */
+	line-height: normal;
+	font-size: 14px;
+
+	/* Без него в Opera будет отступ под элементами */
+	vertical-align: top;
+
+	/* Эмуляция inline-block для IE6-7 */
+	//display: inline;
+	//zoom: 1;
+}
+
+.blocks figure {	
+    display: block; /* Блочный элемент */
+    margin: 0 10px 10px 0; /* Отступы */
+}
+
+.blocks figure p {
+	margin-top: 12px;
+}
+
+.blocks  figcaption {
+    color: #5094f2;
+	font-family: Segoe WP, Arial, sans-serif;
+	font-size: 20.35px;
+	font-weight: lighter;
+	margin-top: 5px;
+}
+
+.blocks p {
+	color: #909090;
+	font-family: Segoe WP, Arial, sans-serif;
+	font-size: 14.35px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.product  {
+	margin: 63px 0 0px 0;
+
+}
+
+.product h1 {
+	color: #6f7173;
+	font-family: Segoe WP, Arial, sans-serif;
+	font-size: 42.35px;
+	font-weight: lighter;
+	margin-left: 57px;
+}
+
+.product img {
+	float: left;
+	margin: 34px 82px 0 46px;
+}
+
+.product h2 {
+	color: #6f7173;
+	font-family: Segoe WP, Arial, sans-serif;
+	font-size: 26.35px;
+	font-weight: lighter;
+	margin-top: 3px;
+	margin-bottom: 17px;
+}
+
+.product p {
+	color: #909090;
+	font-family: Segoe WP, Arial, sans-serif;
+	font-size: 15.35px;
+	font-weight: lighter;
+	line-height: 35px;
+	width: 920px;
+}
+
+/* Подвал страницы */
+.page-footer {
+	padding-top: 28px;
+	padding-bottom: 47px;
+}
+
+.copyright {
+	color: #909090;
+	font-family: Segoe WP, Arial, sans-serif;
+	font-size: 15.35px;
+	font-weight: lighter;
+	text-align: center;
+	-margin-top: 28px;
+}
+
+/* responsive rules */
+@media all and (max-width : 980px) {
+   .nav > li {
+        float: none;
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+   .nav ul.subs {
+        position: relative;
+        top: 0;
+    }
+   .nav li:hover ul.subs {
+        display: none;
+    }
+    .nav li #s1:target + ul.subs,
+    .nav li #s2:target + ul.subs {
+        display: block;
+    }
+
+   .nav ul.subs > li {
+        display: block;
+        width: auto;
+    }
+}
+

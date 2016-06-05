@@ -1,0 +1,78 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: PT Sans;
+	background: #4F535C url(../images/background_body.jpg);
+}
+
+.form-block {
+	width: 675px;
+	min-height: 477px;
+	margin: 94px auto;
+	display: block;
+	background-color: #f1f2f4;
+	box-sizing: border-box;
+	padding: 50px 45px;
+}
+
+h1 {
+	color: #36383c;
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+h2 {
+	color: #7c818b;
+ 	font-size: 18px;
+ 	text-align: left;
+ 	clear: left;
+ 	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+
+input[type="text"] {
+	color: #6f7278;
+	font-size: 24px;
+	width: 367px;
+	height: 84px;
+	background: #e5e7e9;
+	float: left;
+	outline: none;
+	border: 1px solid #adaeb0;
+	border-radius: 3px;
+	padding-left: 18px;
+}
+
+input[type="button"] {
+	width: 385px;
+	height: 73px;
+	margin: 20px 0;
+	float: left;
+	clear: left;
+	text-transform: uppercase;
+	border: 1px solid #2a8b7b;
+	background: #55C0AF url(../images/background_button.png) no-repeat;
+	font-size: 36px;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+
+#list {
+	float: left;
+	clear: left;
+	outline: 1px solid red;
+	list-style-position: inside;
+}

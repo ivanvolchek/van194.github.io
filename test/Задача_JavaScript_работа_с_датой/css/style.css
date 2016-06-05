@@ -1,0 +1,82 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #fe6464;
+}
+
+h1 {
+	margin: 20px 0;
+	color: #fff;
+	font: normal 36px PT Sans;
+	text-align: center;
+}
+
+/* Блок */
+.time-block {
+	width: 460px;
+	-height: 377px;
+	margin: 30px auto;
+	display: block;
+	background: #ffffff;
+}
+
+/* Шапка блока */
+.header {
+	background: #424242;
+	width: 100%;
+	display: block;
+	padding: 30px;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: 0 1px 0 #000;
+	box-sizing: border-box;
+}
+/* Свойства дня недели */
+#todayId {
+	font: normal 18px PT Sans;
+	margin-bottom: 15px;
+}
+/*Текущие число*/
+#digital_time {
+	font: normal 53px PT Sans;
+	margin-bottom: 10px;
+}
+
+/* Текащая Дата */
+#dataId {
+	font: normal 16px PT Sans;
+	color: #9b9b9b;
+}
+
+tr td {
+	border: 1px solid #000;
+	padding: 10px;
+}
+
+.row-1 {
+	background-color: lightblue !important;
+}
+
+tr:nth-child(2n) {
+	background-color: lightgreen;
+}
+
+tr:nth-child(2n+1) {
+	background-color:pink;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font: normal 16px PT Sans;
+}
+
+caption {
+	color: #474747;
+	font: normal 24px PT Sans;
+	padding: 10px;
+}

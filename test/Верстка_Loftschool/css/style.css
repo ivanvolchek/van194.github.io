@@ -1,0 +1,385 @@
+@font-face {
+	font-family: "FiraSans-Medium";
+	src: url(../fonts/FiraSans/FiraSans-Medium.ttf);
+}
+
+@font-face {
+	font-family: "FiraSans-Regular";
+	src: url(../fonts/FiraSans/FiraSans-Regular.ttf);
+}
+
+
+@font-face {
+	font-family: "FiraSans-Light";
+	src: url(../fonts/FiraSans/FiraSans-Light.ttf);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 16px;
+}
+
+/* Изминили ширину согласно макету */
+.container {
+	width: 960px;
+}
+
+/* Шапка странице */
+.site-header {
+	background: #8cc34b;
+	padding: 13px 28px 10px;
+	box-shadow: 0 7px 0 #eee;
+}
+
+/* Аватарка пользователя */
+.avatar {
+	border-radius: 50%;
+	padding: 1px;
+	background: #fff;
+	float: left;
+	margin-right: 17px;
+}
+
+.user-info {
+	color: #fff;
+	float: left;
+	width: 400px;
+}
+
+.user-info img {
+	cursor: pointer;
+}
+.user-info h2 {
+	font-family: "FiraSans-Medium";
+	font-size: 1.32875em;
+	text-align: left;
+	margin: 0 0 2px;
+	padding-top: 10px;
+}
+
+.user-info p {
+	font-family: "FiraSans-Regular";
+	font-size: 0.885625em;
+}
+
+.social-icon {
+	float: right;
+}
+
+.site-header .fa {
+	color: #e1eed4;
+	font-size: 35px !important;
+    margin: 15px 0px 0px 17px;
+    cursor: pointer;
+}
+
+.site-header .fa:hover {
+	color: #fff;
+}
+
+.about-student h2 {
+	color: #212121;
+	text-align: center;
+	font-family: "FiraSans-Medium";
+	font-size: 2.625em;
+	text-align: center;
+	margin-top: 74px;
+} 
+
+.about-student h2 + h3 {
+	margin-top: 17px;
+}
+
+.about-student h3 {
+	color: #727272;
+	font-size: 21px;
+	font-size: 1.3125em;
+	font-family: "FiraSans-Light";
+	text-align: center;
+}
+
+.photo {
+	float: left;
+	margin: 30px 19px 0 -6px;
+}
+
+.description{
+ 	overflow:hidden;
+}
+
+.description h3 {
+	color: #212121;
+	text-align: left;
+	font-size: 1.3125em;
+	font-family: "FiraSans-Regular";
+	margin: 29px 0 11px;
+}
+
+.description p {
+	color: #727272;
+	text-align: left;
+	font-size: 0.875em;
+	font-family: "FiraSans-Light";
+	width: 280px;
+}
+
+/* Блок с курсами */
+.courses {
+	padding-top: 126px;
+	padding-bottom: 155px;
+}
+.courses h2 {
+	color: #212121;
+	font-size: 2.625em;
+	font-family: "FiraSans-Medium";
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.courses h3 {
+	color: #727272;
+	font-size: 1.3125em;
+	font-family: "FiraSans-Light";
+	text-align: center;
+	margin-top: 16px;
+	margin-bottom: 43px;
+}
+
+/* Обводка курсов */
+.wrapper {
+	border: 1px solid #d6d7d5;
+	width: 300px;
+	padding-left: 0;
+    padding-right: 0;
+	margin-left: 9px;
+    margin-right: 11px;
+    box-shadow: 0 4px 2px #eee;
+    margin-bottom: 23px;
+    float: left;
+    -max-width: 300px;
+}
+
+.description-courses-text {
+	padding: 19px 16px 10px 20px;
+}
+
+.description-courses-text h3 {
+	color: #212121;
+	font-size: 1.3125em;
+	font-family: "FiraSans-Regular";
+	text-align: left;
+	margin-bottom: 8px;
+	margin-top: 0;
+}
+
+.wrapper:hover img {
+	border-bottom: 5px solid #8cc34b;
+}
+
+.wrapper:hover h3 {
+	color: #8cc34b;
+} 
+
+.description-courses-text p {
+	color: #727272;
+	font-size: 0.875em;
+	font-family: "FiraSans-Light";
+	line-height: 21px;
+}
+
+.description-courses-text p  + p {
+	color: #b6b6b6;
+}
+
+.description-courses-text .fa {
+	float: left;
+	margin-right: 4px;
+	line-height: 21px;
+
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	margin-top: 2px;
+	position: absolute;
+	left: 20px;
+	border: 2px solid #b6b6b6;
+	cursor: pointer;
+}
+
+.checkbox-element label {
+	color: #727272;
+	font-size: 1.125em;
+	font-family: "FiraSans-Regular";
+	margin-left: 38px;
+	margin-top: 22px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.checkbox-element label:before {
+    border-radius: 3px;
+}
+
+input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	font-size: 15px;
+	color: #ecf4e3;
+	text-align: center;
+    line-height: 21px;
+    background-color: #acd37e;
+    border: none;
+}
+
+input[type=checkbox]:checked + label {
+	color: #acd37e;
+}
+
+.link-cours {
+	display: block;
+}
+
+.link-cours:link {
+	text-decoration: none;
+	outline: none;
+}
+
+.description-courses-text-new {
+	padding: 19px 16px 10px 20px;
+	background: #e8f0dc;
+}
+
+.description-courses-text-new h3 {
+	color: #707766;
+	font-size: 1.3125em;
+	font-family: "FiraSans-Regular";
+	text-align: left;
+	margin-bottom: 8px;
+	margin-top: 0;
+}
+
+.description-courses-text-new p {
+	color: #a4ac9a;
+	font-size: 0.875em;
+	font-family: "FiraSans-Light";
+	line-height: 21px;
+}
+
+.description-courses-text-new p  + p {
+	color: #c4ccba;
+}
+
+.description-courses-text-new .fa {
+	float: left;
+	margin-right: 4px;
+	line-height: 21px;
+
+}
+
+.footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 12px; /* Поля вокруг текста */
+    background: #212121;
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
+
+.container .text-muted {
+    margin:  0;
+    color: #ffffff;
+    font-family: "FiraSans-Regular";
+    font-size: 0.87875em;
+    text-align: center;
+}
+
+/* Окно */
+#modal_form {
+	width: 462px; 
+	border-radius: 5px;
+	background: #fff;
+	position: fixed; /* чтобы окно было в видимой зоне в любом месте */
+	top: 45%; /* отступаем сверху 45%, остальные 5% подвинет скрипт */
+	left: 50%; /* половина экрана слева */
+	margin-top: -150px;
+	margin-left: -150px; /* тут вся магия центровки css, отступаем влево и вверх минус половину ширины и высоты соответственно =) */
+	display: none; /* в обычном состоянии окна не должно быть */
+	opacity: 1; /* полностью прозрачно для анимирования */
+	z-index: 5; /* окно должно быть наиболее большем слое */
+	padding: 20px 10px;
+}
+
+/* Кнопка закрыть для тех кто в танке) */
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+
+/* Подложка */
+#overlay {
+	z-index: 3; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
+	position: fixed; /* всегда перекрывает весь сайт */
+	background-color: #000; /* черная */
+	opacity: 0.8; /* но немного прозрачна */
+	width: 100%; 
+	height: 100%; /* размером во весь экран */
+	top: 0; 
+	left: 0; /* сверху и слева 0, обязательные свойства! */
+	cursor: pointer;
+	display: none; /* в обычном состоянии её нет) */
+}
+
+#modal_form h4 {
+	color: red;
+	text-align: center;
+	color: #8cc34b;
+	font-family: "FiraSans-Medium";
+	font-size: 2.601875em;
+}
+
+/* Аватарка пользователя */
+@media only screen and (max-width: 400px) {
+	.user-info {
+		color: #fff;
+		float: left;
+		width: 100%;
+	}
+}
+
+/* Сбрасываем с помощью запроса фиксированную верстку */
+@media only screen and (max-width: 960px) {
+	.container {
+		width: auto;
+	}
+	/* Обводка курсов */
+	.wrapper {
+		width: auto;
+	}
+
+	.courses {
+		padding-top: 15px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.social-icon {
+		float: left;
+	}
+}

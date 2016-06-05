@@ -1,0 +1,450 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	font-family: Cuprim;
+	src: url(../fonts/cuprum_bold.ttf);
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto; /* ie8 */
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Myriad Pro', Arial, Helvetica, sans-serif !important;
+	font-size: 16px !important;
+	background:
+		url(../images/body-backgroun.png)  repeat-x fixed  100% 0,
+		url(../images/body-backgroun1.png) repeat-y fixed 100% 0;
+	background-color: #21212A;
+}
+
+.container{ 
+	width: 1000px;
+}
+
+.wrapper {
+	margin-top: 9px;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;s
+	background-color: black;
+}
+
+.header-page {
+	-width: inherit;
+	height: 140px;
+	position: relative;
+	display: block;
+	background-image: url(../images/Themis.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+/* Пседво классы для свечения */
+.header-page:before {
+	content: "";
+	width: 109px;
+	height: 559px;
+	background: url(../images/light-right.png) no-repeat;
+	position: absolute;
+	right: -109px;
+	top: 0px;
+}
+
+.header-page:after {
+	content: "";
+	width: 109px;
+	height: 559px;
+	background: url(../images/light-left.png) no-repeat;
+	position: absolute;
+	left: -109px;
+	top: 0px;
+}
+
+/* Логотип */
+.navbar-brand {
+	display: block;
+	max-width: 398px;
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+/* Внимание странная штука */
+.navbar {
+	background-color: transparent;
+	border: none;
+	margin-bottom: 0px;
+}
+
+.top-menu {
+	float: right;
+	display: table;
+	margin: 18px 0 0;
+}
+
+.top-menu a {
+	font-size: 1.125em; /* 18px / 16px */
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+
+
+.navbar-inverse .navbar-nav > 
+.active > a, .navbar-inverse 
+.navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > 
+.active > a:focus {
+	color: #c99e23;
+	background-color: transparent;
+}
+
+/* Номер для связи */
+.tel-number {
+	color: #c99e23;
+	font-size: 2.25em !important; /* 36 / 16 */
+    font-weight: 600;
+	float: right;
+	clear: right;
+	text-decoration: none;
+    margin-right: 14px;
+}
+
+.between-city {
+	color: #c4c4c4;
+}
+
+.tel-number:hover {
+	text-decoration: none;
+	color: #c99e23;
+}
+
+
+/*Начало Маркетинговая зона*/
+.jumbotron-top {
+	background: url(../images/substrate_picture.jpg) 100% 100% no-repeat; /* Добавляем фон */
+	background-size: cover; 
+	position: relative;
+	min-height: 314px;
+}
+
+.jumbotron-top p {
+	color: #333333;
+    font-size: 1.125em;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Myriad Pro', Arial, sans-serif;
+    margin-left: 5.8%;
+}
+
+.jumbotron-top  mark {
+    background: #2e2e35 none repeat scroll 0 0;
+    color: #d8ad31;
+    letter-spacing: 1px;
+    line-height: 14px;
+}
+
+.jumbotron-bottom {
+	background: url(../images/substrate_picture_footer.png) 100% 100% no-repeat; /* Добавляем фон */
+	background-size: cover; 
+	min-height: 104px;
+}
+
+/* Сама форма */
+.sign-up-form {
+    width: 419px;
+    position: absolute;
+    left: 38px;
+    left: 36px;
+}
+
+.form-group {
+	background: url(../images/form-question-img.jpg) repeat;
+	border: 1px solid #dea303;
+    padding: 13px 20px 11px;
+    position: relative;
+   
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.form-group textarea {
+	resize: none; 
+}
+
+/* Кнопка на форме */
+.sign-up-button {
+	color: #000;
+	padding: 7px 20px;
+	text-transform: uppercase;
+	font-size: 1em;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #333;
+	opacity: 0.9;
+	min-width: 352px;
+}
+
+.h2-text {
+    color: #fff;
+    font-size: 2.1em;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 4.1%;
+    margin-left: 6.9%;
+}
+
+/* Левая часть страницы */
+.menu-Left {
+	border: 2px solid #c59a1f;
+	margin: 28px 38px 0px 5px;
+}
+
+/* Заголовок консультация */
+.nav-header {
+    color: #c89d22;
+    font: bold 1.5em "Cuprum",Arial,Helvetica,sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 0 #000002;
+    text-transform: uppercase;
+    margin-top: 14px;
+}
+
+.nav-list li {
+	list-style: none;
+	background-image: url(../images/circle-list.png);
+	background-repeat: no-repeat;
+	background-position: 31px 8px;
+    padding-left: 40px;
+    padding-bottom: 7px;
+}
+
+.nav-list li:first-child {
+	background-image: none;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav-list a {
+	color: #C5C5C5;
+	display: block;
+	text-decoration: none;
+	font: bold 0.6875em "Cuprum",Arial,Helvetica,sans-serif;
+	text-transform: uppercase;
+	position: relative;
+	transition: color 0.3s ease 0s;
+	word-spacing: 7px;
+}
+
+.nav-list a:hover {
+	color: #d3a92c;
+}
+
+/* Правая часть страницы */
+
+article {
+	color: #848484;
+	text-align: left;
+}
+
+#colRight {
+	margin-right: 82px;
+	margin-top: 28px;
+}
+
+#colRight h1 {
+	color: #c5c5c5;
+ 	font-size: 1.5em; /* 24 / 16 */
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	text-shadow: 1px 1px 0 #000002;
+ 	font-weight: 800;
+}
+
+#colRight  p {
+	font-size: 0.875em; /* 14 / 16 */
+	text-align: left;
+	font-weight: normal;
+}
+
+#colRight  b {
+	color: #b38c1f;
+	font-weight: normal;
+}
+
+#colRight  i {
+	color: #b38c1f;
+	font-style: normal;
+}
+
+.list-varning li {
+    list-style: none;
+    color: #848484;
+	font: 0.875em Tahoma, Arial, sans-serif; /* 14 / 16 */
+	text-align: left;
+}
+
+.list-varning li:before {
+    content: "– ";
+}
+
+/* Подвал сайта */
+footer {
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.25); /* Цвет фона и значение прозрачности */
+}
+
+.footer-page {
+ 	width: 100%;
+ 	max-width: 1000px;
+ 	margin: 0 auto;
+ 	height: auto !important;
+	color: #666666;
+ 	font: 0.75em Tahoma, Arial, sans-serif; /*12 / 16 */
+ 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+address {
+	text-align: left;
+	padding-top: 33px;
+	margin-bottom: 0px;
+	display: block;
+	font-style: normal;
+}
+
+address a {
+	color: #666666;
+	text-decoration: none;
+}
+
+address a:hover {
+	color: #666666;
+	text-decoration: none;
+}
+
+address a[href^="mailto"] {
+	text-decoration: underline;
+}
+
+.copyright{
+	padding-top: 13px;
+	padding-bottom: 17px;
+}
+
+.market-copyright {
+	color: #c59a1f;
+}
+
+/* Калибри инфо */
+.info {
+	float: right;
+	clear: right;
+	-margin-right: 20px;
+	padding-bottom: 20px;
+}
+
+a[href$="kolibri.ru"] {
+	color: #a31717;
+	text-decoration: underline;
+}
+
+.count {
+	background: url(../images/count.png) no-repeat;
+	width: 88px;
+	height: 31px;
+	float: right;
+	margin: 43px 0px 8px;
+	background-color: #000000;
+	opacity: 0.25; /* Полупрозрачный фон */
+}
+
+/* -------------------------------
+Адаптивный дизайн
+----------------------------------*/
+@media screen and (max-width: 992px) {
+	/* Скрываем псевдо классы свечения */
+	.header-page:before {
+		display: none;
+	}
+	.header-page:after {
+		display: none;
+	}
+
+	/* Скрываем фемиду*/
+	.header-page {
+		background-image: none;
+	}
+
+	/* Скрываем телефонный номаре*/
+	.tel-number { 
+  		display: none;
+  	}
+
+  	.container{ 
+		width: auto;
+	}
+
+	/* Сама форма */
+	.sign-up-form {
+    	width: auto;
+    	position: relative;
+	}
+
+	.jumbotron-top p {
+		margin-top: 30px;
+		
+	}
+	
+	/* Цвет выподающей штуки */
+	.navbar-collapse {
+		background: #222222;
+	}
+
+	/* Форма */
+	.sign-up-form  {
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+	/* Кнопка */
+	.sign-up-button {
+		min-width: 35.2%;
+	}
+
+	/* Заголовок консультация */
+	.nav-header {
+    	text-align: inherit;
+	}
+
+	/* Левая часть страницы */
+	.menu-Left {
+		border: none;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	/* Цвет выподающей штуки */
+	.navbar-collapse {
+		background: transparent;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	/* Логотип */
+	.navbar-brand {
+		max-width: 347px;
+	}
+}
+
+

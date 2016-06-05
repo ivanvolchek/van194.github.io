@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!--шапка страницы и нивигация -->
+	<header class="page-header">
+		<div class="header-bg">
+			<a href="#">
+				<figure class="logo">
+					<img src="images/logo.png" alt="Logo">
+					<figcaption>Prechu</figcaption>
+				</figure>
+			</a>
+			<nav class="main-menu">
+				<ul class="nav">
+					<li><a href="">Home </a></li>
+					<li><a href="">Products </a></li>
+					<li><a href="">Services </a></li>
+					<li><a href="">Contact</a></li>            
+				</ul>
+			</nav>
+		</div>
+	</header> 
+	<!-- Слейдер -->
+	<section id="jms-slideshow" class="jms-slideshow">
+		<div class="step" data-color="color-1">
+			<div class="jms-content">
+				<h3>Lorem Ipsum is simply </h3>
+				<p>dummy text of the <br/> 
+				printing & typesetting </p>
+				<a class="jms-link" href="#">Sign up now</a>
+			</div>
+			<img src="images/iphone1.png" />
+		</div>
+		<div class="step" data-color="color-2">
+			<div class="jms-content">
+				<h3>Holy cannoli!</h3>
+				<p>dummy text of the <br/> 
+				printing & typesetting </p>
+				<a class="jms-link" href="#">Sign up now</a>
+			</div>
+			<img src="images/iphone.png" />
+		</div>
+	</section>	
+	<!-- Контент -->
+	<article class="content">
+		<ul class="blocks">
+			<li>
+				<figure>
+					<p><img src="images/icon-write.png" alt="write-icon"></p>
+					<figcaption>Contrary to popular</figcaption>
+				</figure>
+				<p>Lorem Ipsum is not simply random text. It has roots in a piece</p> 
+			</li>
+			<li>
+				<figure>
+					<p><img src="images/comp-icon.png" alt="comp-icon"></p>
+					<figcaption>Contrary to popular</figcaption>
+				</figure>
+				<p>Lorem Ipsum is not simply random text. It has roots in a piece</p>	
+			</li>
+			<li>
+				<figure>
+					<p><img src="images/basket-icon.png" alt="basket-icon"></p>
+					<figcaption>Contrary to popular</figcaption>
+				</figure>
+				<p>Lorem Ipsum is not simply random text. It has roots in a piece </p>
+			</li>
+		</ul>
+		<div class="product">
+			<h1>The Shopping cart</h1>
+			<img src="images/cards.png" alt="cards">
+			<h2>Some Bullet text here</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+			Lorem Ipsum has been the industry's standard dummy text ever 
+			When an unknown printer took a galley of type and scrambled 
+			It to make a type specimen book. It has survived not only five centuries
+			But also the leap into electronic typesetting,
+			Remaining essentially unchanged. It was popularised 
+			The release of Letraset sheets containing Lorem Ipsum passages</p>
+		</div>
+	</article>
+	<!-- Подвал странцы -->
+	<footer class="page-footer"> 
+		<p class="copyright">Copyright © 2012-2013 cssauthor.com</p>
+	</footer>
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<!-- jmpress plugin -->
+	<script type="text/javascript" src="js/jmpress.min.js"></script>
+	<!-- jmslideshow plugin : extends the jmpress plugin -->
+	<script type="text/javascript" src="js/jquery.jmslideshow.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.48780.js"></script> 
+	<script type="text/javascript">
+	$(function() {
+
+		$( '#jms-slideshow' ).jmslideshow();
+		
+	});
+	</script>
+</body>
+</html>

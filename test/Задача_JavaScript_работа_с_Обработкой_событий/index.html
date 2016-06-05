@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<title>Задачи с JavaScript</title>
+ 	<link href="css/style.css" rel="stylesheet">
+ </head>
+ <body>
+ 	<h1>Обработка событий</h1>
+ 	<fieldset>
+ 		<legend>onClick</legend>
+ 		<ul class="task-list">
+ 			<li>
+ 				<input id="button" class="button zero" type="button" value="Нажми на меня">
+ 			</li>
+ 			<li>
+ 				<a id="click" href="#">Кликните по ссылке </a>
+ 			</li>
+ 			<li>
+ 				<fieldset>
+ 					<legend>Кликните на изображение</legend>
+ 					<img src="images/zeroblur.jpg" onclick="randomFiveImages(this)">
+ 				</fieldset>
+ 			</li>
+ 			<li>
+ 				<input class="button one"  type="button" value="Случайное число" onclick="randomNumber()">
+ 				<p id="numberId">Случайное число</p>
+ 			</li>
+ 		</ul>
+ 	</fieldset>
+ 	<fieldset>
+		<legend>onMouseOver</legend>
+		<ul class="task-list">
+			<li>
+				<img id="zero" src="images/zeroblur.jpg">
+			</li>
+			<li>
+				<input class="button three" id="bodyBackground" type="button" value="При навидении меняется фон">
+			</li>
+			<li>
+				<input id="textMouseOver" class="button two" type="button" value="Спрятать текст" onmouseover="mouseOver()">
+				<p id="mouseOverButton">Вы навели на кнопку мышь</p>
+			</li>
+		</ul>
+		</fieldset>
+		<fieldset>
+			<legend>onFocus</legend>
+			<ul class="task-list">
+				<li>
+					<input type="text" class="text" value="Введите текст" onfocus="this.value=''" onblur="this.value='Введите текст'">
+				<li>
+					<label>Введите ваш возраст:</label> <input type="text" id="input">
+					<div id="error"></div>
+				</li>
+			</ul>
+		</fieldset>
+ 	<script src="min.js"></script>
+ </body>
+</html>
+<!-- onFocus -->

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Верстка Loftschool</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <header class="container-fluid site-header">
+      <div class="row">
+        <div class="col-md-12 ">
+        <div class="user-info">
+          <img class="avatar" src="images/avatar.jpg" alt="avatar">
+          <h2>Быстров Борис Викторович</h2>
+          <p>bystrov@gmail.com</p>
+        </div>
+        <div class="social-icon">
+            <a href="#"><i class="fa fa-github  " aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-skype  fa-3x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-vk  fa-3x" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container about-student">
+       <div class="row">
+        <div class="col-md-12">
+          <h2>О будущем ученике</h2>
+          <h3>Ребятам из Loftschool будет полезно узнать немного обо мне</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="photo">
+            <img src="images/hello-icon.png" alt="icon"> 
+          </div>
+          <div class="description">
+             <h3>Немного обо мне</h3>
+             <p>Я живу в Санкт-Петербурге (Россия). Мне 26 лет. Высшее образование - закончил НИУ ИТМО. Опыт в разработке 1 год. Уже окончил курсы в Академии Программирования, где не плохо научился верстать. Пока есть только один сайт, которым могу похвастаться: <a href="https://yandex.ru">www.yandex.ru</a></p>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <div class="photo">
+            <img src="images/experience-icon.png" alt="experience">
+          </div>
+          <div class="description">
+          <h3>Мой опыт в разработке</h3>
+          <p>В этом блоке я расскажу о себе, что я уже умею. Здесь я укажу другие курсы, которые до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру: html5, css3, sass, jade, git и пр.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container courses">
+     <div class="row">
+      <div class="col-md-12">
+        <h2>Курсы на loftblog</h2>
+        <h3>которые мне помогут в выполнении этого задания</h3>
+      </div>
+    </div>
+
+    <div class="row">
+        
+        <div id="block_one" class="col-md-4  wrapper"> <!-- column -->
+          <a id="link_one" class="link-cours" href="https://learn.javascript.ru/first-steps"  target="blank">
+            <img  src="images/js-icon.png" class="img-responsive" alt="js-icon">
+            <div id="description_courses_one" class="description-courses-text">
+              <h3>Основы JavaScript</h3>
+              <p>Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
+              <p><i class="fa fa-clock-o" aria-hidden="true"></i>24 урока (6 часов 46 минут)</p>
+              <div class="checkbox-element">
+                <input id="subscribe_one" name="subscribe" type="checkbox" >
+                <label for="subscribe_one">Посмотрел</label>
+              </div>
+            </div>
+          </a>
+        </div>
+           
+        <div id="block_two" class="col-md-4  wrapper"> <!-- column -->
+          <a id="link_two" class="link-cours" href="https://webref.ru/dev/jqfundamentals"  target="blank">
+          <img src="images/jquery-icon.png" class="img-responsive" alt="jquery-icon">
+           <div id="description_courses_two" class="description-courses-text">
+            <h3>Основы JQUERY</h3>
+            <p>Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</p>
+            <p><i class="fa fa-clock-o" aria-hidden="true"></i>11 уроков (2 часа 6 минут)</p>
+             <div class="checkbox-element">
+              <input id="subscribe_two" name="subscribe" type="checkbox" >
+              <label for="subscribe_two">Посмотрел</label>
+            </div>
+          </div>
+          </a>
+        </div><!--/.column -->
+
+        <div id="block_three" class="col-md-4 wrapper">
+         <a id="link_thee" class="link-cours" href="http://htmlbook.ru"  target="blank">
+          <img src="images/base-icon.png" class="img-responsive" alt="base-icon">
+          <div id="description_courses_three" class="description-courses-text">
+            <h3>Базовые элементы страницы</h3>
+            <p>Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.</p>
+            <p><i class="fa fa-clock-o" aria-hidden="true"></i>9 уроков (2 часа 7 минут)</p>
+            <div class="checkbox-element">
+              <input id="subscribe_three" name="subscribe" type="checkbox" >
+              <label for="subscribe_three">Посмотрел</label>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+        <div id="block_four" class="col-md-4 wrapper">
+         <a id="link_four" class="link-cours" href="https://habrahabr.ru/post/142120/"  target="blank">
+          <img src="images/adaptive-icon.png" alt="adaptive-icon">
+          <div id="description_courses_four" class="description-courses-text">
+            <h3>Создание адаптивных сайтов</h3>
+            <p>В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.</p>
+            <p><i class="fa fa-clock-o" aria-hidden="true"></i>7 уроков (2 часа 11 минут)</p>
+            <div class="checkbox-element">
+              <input id="subscribe_four" name="subscribe" type="checkbox" >
+              <label for="subscribe_four">Посмотрел</label>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div id="block_five" class="col-md-4 wrapper">
+         <a id="link_five" class="link-cours" href="https://www.youtube.com/watch?v=g187rf7yPjk"  target="blank">
+          <img src="images/button-generator-icon.png" alt="button-generator-icon">
+          <div id="description_courses_five" class="description-courses-text">
+            <h3>Верстка адаптивной css галереи</h3>
+            <p>В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.</p>
+            <p><i class="fa fa-clock-o" aria-hidden="true"></i>6 уроков (1 час 9 минут)</p>
+             <div class="checkbox-element">
+              <input id="subscribe_five" name="subscribe" type="checkbox" >
+              <label for="subscribe_five">Посмотрел</label>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div id="block_six" class="col-md-4 wrapper">
+         <a id="link_six" class="link-cours" href="http://loftblog.ru/material/verstka-adaptivnoj-css-galerei/"  target="blank">
+          <img src="images/adaptive-gallery-icon.png" alt="adaptive-gallery-icon">
+           <div id="description_courses_six" class="description-courses-text">
+            <h3>Верстка адаптивной css галереи</h3>
+            <p>В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.</p>
+            <p><i class="fa fa-clock-o" aria-hidden="true"></i>4 урока (50 минут)</p>
+             <div class="checkbox-element">
+              <input id="subscribe_six" name="subscribe" type="checkbox" >
+              <label for="subscribe_six">Посмотрел</label>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div id="modal_form"><!-- Сaмo oкнo --> 
+        <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть --> 
+          <!-- Тут любoе сoдержимoе -->
+          <h4>✔Задание выполнено</h4>
+      </div>
+      <div id="overlay"></div><!-- Пoдлoжкa -->
+  </div>
+
+
+    <div class="footer">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-md-push-3 ">
+          <p class="text-muted">А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,
+          не зависимо от количества контента на странице и размера окна.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="js/min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <!--  <script src="js/bootstrap.min.js"></script> -->
+  </body>
+</html>
